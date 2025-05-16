@@ -76,6 +76,7 @@ const WheelsForm = () => {
           type="submit" 
           variant="contained" 
           sx={{ bgcolor: 'black', '&:hover': { bgcolor: '#333' } }}
+          disabled={!wheels}
         >
           Next
         </Button>

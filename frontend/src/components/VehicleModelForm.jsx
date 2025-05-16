@@ -150,7 +150,7 @@ const VehicleModelForm = () => {
           type="submit"
           variant="contained"
           sx={{ bgcolor: 'black', '&:hover': { bgcolor: '#333' } }}
-          disabled={vehicles.length === 0}
+          disabled={vehicles.length === 0 || !vehicleId}
         >
           Next
         </Button>

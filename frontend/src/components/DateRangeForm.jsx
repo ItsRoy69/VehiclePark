@@ -158,7 +158,7 @@ const DateRangeForm = () => {
               type="submit"
               variant="contained"
               sx={{ bgcolor: 'black', '&:hover': { bgcolor: '#333' } }}
-              disabled={submitting}
+              disabled={submitting || !startDate || !endDate}
             >
               {submitting ? <CircularProgress size={24} /> : "Book Now"}
             </Button>
