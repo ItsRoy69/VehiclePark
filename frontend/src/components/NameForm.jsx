@@ -70,11 +70,16 @@ const NameForm = () => {
         </Typography>
       )}
 
-      <Box sx={{ mt: 3, display: "flex", justifyContent: "flex-end" }}>
-        <Button type="submit" variant="contained" color="primary">
-          Next
-        </Button>
-      </Box>
+      <Button 
+        type="submit" 
+        variant="contained" 
+        color="inherit"
+        fullWidth
+        sx={{ mt: 2, bgcolor: 'black', color: 'white', '&:hover': { bgcolor: '#333' } }}
+        disabled={!localFirst.trim() || !localLast.trim()}
+      >
+        Next
+      </Button>
     </Box>
   );
 };

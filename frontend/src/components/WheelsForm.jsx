@@ -72,7 +72,11 @@ const WheelsForm = () => {
         <Button variant="outlined" onClick={prevStep}>
           Back
         </Button>
-        <Button type="submit" variant="contained" color="primary">
+        <Button 
+          type="submit" 
+          variant="contained" 
+          sx={{ bgcolor: 'black', '&:hover': { bgcolor: '#333' } }}
+        >
           Next
         </Button>
       </Box>

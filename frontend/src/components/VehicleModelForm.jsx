@@ -149,7 +149,7 @@ const VehicleModelForm = () => {
         <Button
           type="submit"
           variant="contained"
-          color="primary"
+          sx={{ bgcolor: 'black', '&:hover': { bgcolor: '#333' } }}
           disabled={vehicles.length === 0}
         >
           Next
